@@ -14,13 +14,8 @@ const FAQ: React.FC = () => {
   const faqData: FAQItem[] = [
     {
       question: "Bagaimana cara melacak paket saya?",
-      answer: "Anda dapat melacak paket dengan memasukkan nomor resi di halaman 'Lacak Paket' atau melalui dashboard member area. Sistem tracking kami real-time dan akan menampilkan posisi terkini paket Anda.",
+      answer: "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quo. Perspiciatis aperiam cum laboriosam? Sit, inventore porro provident doloremque incidunt dicta adipisci praesentium distinctio sed.",
       category: "tracking"
-    },
-    {
-      question: "Berapa lama waktu pengiriman?",
-      answer: "Waktu pengiriman bervariasi tergantung layanan: Regular (3-4 hari), Express (1-2 hari), Same Day (6-8 jam). Waktu dapat berbeda tergantung jarak dan kondisi cuaca.",
-      category: "shipping"
     },
     {
       question: "Bagaimana sistem kredit bekerja?",
@@ -28,18 +23,22 @@ const FAQ: React.FC = () => {
       category: "credit"
     },
     {
-      question: "Apakah ada asuransi untuk paket?",
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.",
+      answer: "Waktu pengiriman bervariasi tergantung layanan: Regular (3-4 hari), Express (1-2 hari), Same Day (6-8 jam). Waktu dapat berbeda tergantung jarak dan kondisi cuaca.",
+      category: "shipping"
+    },
+    {
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.",
       answer: "Ya, semua paket dilindungi asuransi dasar gratis. Untuk nilai barang tinggi, Anda dapat menambah asuransi tambahan dengan biaya Rp 5.000 per pengiriman.",
       category: "shipping"
     },
     {
-      question: "Bagaimana cara top-up saldo kredit?",
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.",
       answer: "Anda dapat top-up saldo melalui dashboard member area dengan memilih menu 'Top-up Kredit'. Tersedia berbagai metode pembayaran seperti transfer bank, e-wallet (GoPay, OVO, DANA), dan kartu kredit.",
       category: "credit"
     },
     {
-      question: "Apa yang harus dilakukan jika paket hilang atau rusak?",
-      answer: "Segera hubungi customer service kami di 1500-123 atau email support@swiftexpress.com. Tim kami akan melakukan investigasi dan memberikan kompensasi sesuai dengan ketentuan asuransi.",
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.", answer: "Segera hubungi customer service kami di 1500-123 atau email support@swiftexpress.com. Tim kami akan melakukan investigasi dan memberikan kompensasi sesuai dengan ketentuan asuransi.",
       category: "shipping"
     },
     {
@@ -48,7 +47,7 @@ const FAQ: React.FC = () => {
       category: "shipping"
     },
     {
-      question: "Bagaimana cara menjadi member?",
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.",
       answer: "Daftar gratis melalui halaman 'Daftar' dengan mengisi nama, email, dan nomor telepon. Setelah registrasi, Anda akan mendapat bonus kredit Rp 10.000 sebagai welcome bonus.",
       category: "account"
     },
@@ -72,8 +71,8 @@ const FAQ: React.FC = () => {
     { id: 'account', name: 'Akun' }
   ];
 
-  const filteredFAQ = selectedCategory === 'all' 
-    ? faqData 
+  const filteredFAQ = selectedCategory === 'all'
+    ? faqData
     : faqData.filter(item => item.category === selectedCategory);
 
   const toggleFAQ = (index: number) => {
@@ -100,11 +99,10 @@ const FAQ: React.FC = () => {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  selectedCategory === category.id
-                    ? 'bg-green-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                className={`px-4 py-2 rounded-lg transition-colors ${selectedCategory === category.id
+                  ? 'bg-green-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
               >
                 {category.name}
               </button>
@@ -127,7 +125,7 @@ const FAQ: React.FC = () => {
                   <ChevronDown className="h-5 w-5 text-gray-500 flex-shrink-0" />
                 )}
               </button>
-              
+
               {openIndex === index && (
                 <div className="px-6 pb-4">
                   <div className="border-t border-gray-200 pt-4">
