@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       <section className="bg-gradient-to-br from-green-600 via-green-700 to-green-800 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            SwiftExpress
+            Lorem, ipsum.
             <span className="block text-yellow-300">Lorem, ipsum.</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-green-100 max-w-3xl mx-auto">
