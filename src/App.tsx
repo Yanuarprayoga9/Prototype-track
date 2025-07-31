@@ -15,6 +15,13 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Orders from './pages/Orders';
 import Profile from './pages/Profile';
+import AdminLayout from './components/AdminLayout';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import UserManagement from './pages/admin/UserManagement';
+import OrderManagement from './pages/admin/OrderManagement';
+import TopupManagement from './pages/admin/TopupManagement';
+import ApiConfig from './pages/admin/ApiConfig';
+import Reports from './pages/admin/Reports';
 
 function App() {
   return (
@@ -36,6 +43,14 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/profile" element={<Profile />} />
+            
+            {/* Admin Routes */}
+            <Route path="/admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
+            <Route path="/admin/users" element={<AdminLayout><UserManagement /></AdminLayout>} />
+            <Route path="/admin/orders" element={<AdminLayout><OrderManagement /></AdminLayout>} />
+            <Route path="/admin/topup" element={<AdminLayout><TopupManagement /></AdminLayout>} />
+            <Route path="/admin/api-config" element={<AdminLayout><ApiConfig /></AdminLayout>} />
+            <Route path="/admin/reports" element={<AdminLayout><Reports /></AdminLayout>} />
           </Routes>
         </div>
       </Router>

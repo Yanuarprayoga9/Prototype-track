@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2">
             <Package className="h-8 w-8 text-green-600" />
-            <span className="text-2xl font-bold text-gray-800">Lorem</span>
+            <span className="text-2xl font-bold text-gray-800">SwiftExpress</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
