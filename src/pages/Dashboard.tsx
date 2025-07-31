@@ -7,8 +7,6 @@ import {
   TrendingUp, 
   Calendar,
   MapPin,
-  Clock,
-  CheckCircle
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
